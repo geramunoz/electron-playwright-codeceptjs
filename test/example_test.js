@@ -14,7 +14,7 @@ Scenario("test something", async ({ I }) => {
     });
   });
 
-  await I.click("Ver título");
+  await I.click("Ver título", 5);
   await I.see("this was mocked", "h1#title");
   await I.stopMockingRoute("https://fakestoreapi.com/**");
   await I.refreshPage();
