@@ -34,7 +34,7 @@
     "@wdio/spec-reporter": "^7.16.14",
     "chromedriver": "^98.0.1",
     "codeceptjs": "^3.3.0",
-    "electron": "^17.1.0",
+    "electron": "^17.1.1",
     "playwright": "^1.19.2",
     "wdio-chromedriver-service": "^7.2.6",
     "webdriverio": "^6.12.1"
