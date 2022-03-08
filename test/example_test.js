@@ -6,7 +6,6 @@ Scenario("test something", async ({ I }) => {
   await I.see("Hello World!", "h1");
 
   await I.mockRoute("https://fakestoreapi.com/**", (route) => {
-    console.log('I am mocked everything');
     route.fulfill({
       status: 200,
       headers: { "Access-Control-Allow-Origin": "*" },
