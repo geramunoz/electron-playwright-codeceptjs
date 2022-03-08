@@ -14,11 +14,12 @@ Scenario("test something", async ({ I }) => {
     });
   });
 
-  await I.click("Ver título", 5);
+  await I.waitForElement('button', 5);
+  await I.click("Ver título");
   await I.see("this was mocked", "h1#title");
   await I.stopMockingRoute("https://fakestoreapi.com/**");
   await I.refreshPage();
   await I.click("Ver título");
-  await I.waitForResponse('https://fakestoreapi.com/**', 10);
+  await I.waitForResponse("https://fakestoreapi.com/**", 10);
   await I.dontSee("this was mocked", "h1#title");
 });
